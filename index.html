@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewpor" content="width=device-width, initial-scale=1.0">
+        <title>El Sabor de Puebla | Online Orders</title>
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <header>
+            <h1>El Sabor de Puebla</h1>
+            <p>Authentic Mexican Food</p>
+        </header>
+        <main>
+            <section id="truck-info">
+                <h2>Welcome to El Sabor de Puebla!</h2>
+<img src="images/taco-truck.webp" alt="El Sabor de Puebla food truck">
+
+        <p>
+        Enjoy authentic Mexican food, including birria tacos,
+        quesadillas, and refreshing horchata.
+        </p>
+<img src="images/birria-tacos_orig.png" alt="Birria tacos with melted cheese">
+
+     <p>Located in Olney, Philadelphia.</p>
+            </section>
+            <section>
+                <h2>Place your order</h2>
+                <p>Fill out the form bellow to order your favorite food!</p>
+                <p>*Required fields must be completed.</p>
+                <form action="#" method="post">
+                    <fieldset>
+                        <legend>Customer Information</legend>
+                        
+                        <label for="customer-name">Full Name:</label>
+                        <input type="text" id="customer-name" name="customer-name" required>
+
+                        <label for="email">Email Address:</label>
+                        <input type="email" id="email" name="email" required>
+
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" id="phone" name="phone" required>
+                       
+                    </fieldset>
+                    <fieldset>
+                        <legend>Choose your Food</legend>
+                        <p>Select the items you would like to order:</p>
+
+                        <div class="menu-item">
+                            <input type="checkbox" id="birria" name="food" value="Birria Tacos">
+                            <label for="birria">
+                                <strong>Birria Tacos - $12.00</strong>
+                                 </label>
+                                <p>Slow-coocked beef tacos with melted cheese.</p>
+                        </div>
+                        <div class="menu-item">
+                            <input type="checkbox" id="quesadilla" name="food" value="Quesadilla">
+                            <label for="quesadilla"><strong>Quesadilla - $9.00</strong></label>
+                            <p>Cheese-filled tortilla served warm.</p>
+                        </div>
+                        <div class="menu-item">
+                            <input type="checkbox" id="burrito" name="food" value="Burritos">
+                            <label for="burrito"><strong>Chicken Burrito - $11.00</strong></label>
+                            <p>Chicken, rice, beans, and cheese wrapped in a tortilla.</p>
+                        </div>
+                        <div class="menu-item">
+                         <input type="checkbox" id="tacos" name="food" value="Street Tacos">
+                         <label for="tacos"><strong>Street Tacos - $10.00</strong></label>
+                         <p>Small corn tortillas with your choice of meat.</p>
+                        </div>
+                        <div class="menu-item">
+                            <input type="checkbox" id="nachos" name="food" value="Nachos">
+                            <label for="nachos"><strong>Loaded Nachos - $8.00</strong></label>
+                            <p>Tortilla chips topped with cheese and your favorite toppings.</p>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Choose Your Order Size</legend>
+
+                        <input type="radio" id="regular" name="size" value="regular" checked>
+                        <label for="regular">Regular</label>
+
+                        <input type="radio" id="large" name="size" value="large">
+                        <label for="large">Large</label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Choose Your Drink</legend>
+                        <label for="drink">Select a drink:</label>
+
+                        <select id="drink" name="drink">
+                            <option value="">Choose a drink</option>
+                            <option value="Horchata">Horchata</option>
+                            <option value="Hibiscus Water">Hibiscus Water</option>
+                            <option value="Mexican Soda">Mexican Soda</option>
+                            <option value="Bottled Water">Bottled Water</option>
+                        </select>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Special Instructions</legend>
+                        <label for="instructions">Any special requests?</label>
+                        <textarea id="instructions" name="instructions" rows="4" cols="40"></textarea>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Pickup Information</legend>
+
+                        <label for="pickup-time">Preferred Pickup Date and Time:</label>
+                        <input type="text" id="pickup-time" name="pickup-time" placeholder="Example: November 12 at 5 P.M">
+
+                        <label for="pickup-name">Pickup Name (if different)</label>
+                        <input type="text" id="pickup-name" name="pickup-name">
+
+                        <label for="pickup-instructions">Pickup Instructions:</label>
+                        <textarea id="pickup-instructions" name="pickup-instructions" rows="3"></textarea>
+                    </fieldset>
+                    <div class="form-buttons">
+                        <button type="submit">Place Order</button>
+                        <button type="reset">Clear Form</button>
+                    </div>
+                </form>
+            </section>
+        </main>
+    </body>
+</html>
